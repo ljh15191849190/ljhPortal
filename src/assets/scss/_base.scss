@@ -1,0 +1,233 @@
+/**
+ * 公共样式
+ */
+
+/************* 常用基础样式 start **************/
+
+// layout
+.full-content {
+    height: 100%;
+    width: 100%;
+}
+
+.normal-query-widget {
+    width: 200px;
+}
+
+.normal-form-width {
+    width: 550px;
+}
+
+.normal-form-select-width {
+    width: 300px;
+}
+
+@each $position in top, bottom, left, right {
+    .margin-#{$position} {
+        margin-#{$position}: 16px;
+    }
+}
+
+// line
+@each $position in top, bottom, left, right {
+    .border-#{$position} {
+        border-#{$position}: 1px solid $borderColor;
+    }
+}
+
+// color
+.theme-color {
+    color: $themeColor;
+}
+
+.warning-color {
+    color: $warningColor;
+}
+
+.content-color {
+    color: $contentColor;
+}
+
+.desc-color {
+    color: $descColor;
+}
+
+.info-color {
+    color: $infoColor;
+}
+
+/************* 常用基础样式 end **************/
+
+/************* 页面公用 start **************/
+
+// 页面样式布局
+.portal-part {
+    position: relative;
+
+    .left-part {
+        height: 100%;
+        position: absolute;
+    }
+
+    .right-part {
+        position: relative;
+        margin-left: $menuLargeWidth;
+        width: calc(100% - #{$menuLargeWidth});
+        height: 100%;
+    }
+}
+
+// 主页面
+.main-content {
+    position: relative;
+
+    // 内容显示区域
+    .portal-content {
+        padding: 16px;
+        background: white;
+        margin: 0 16px 16px 16px;
+        // breadcrumb的高度46 底部margin 16
+        height: calc(100% - 62px);
+        border: 1px solid #e1e6e5;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+
+        .el-table {
+            width: 100%;
+            // 底部分页高度32 + margin 16
+            height: calc(100% - 48px);
+        }
+
+        &.el-tabs {
+            padding: 0;
+            .el-table {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &.with-search {
+            .el-table {
+                width: 100%;
+                margin-top: 16px;
+                // 底部（分页高度32 + margin 16）+ （搜索行高度38 + margin 16）
+                height: calc(100% - 48px - 54px);
+            }
+
+            // 搜索
+            .search-label { // 表格内搜索
+                color: $descColor;
+                font-size: 14px;
+                margin-right: 8px;
+
+                & + div, & + span {
+                    width: 200px;
+                }
+
+                & ~ .el-button {
+                    margin-left: 16px;
+                }
+
+                & + .smallWidth {
+                    width: 163px;
+                }
+
+                // TODO 无效
+                //& ~ & {
+                //    margin-left: 32px;
+                //}
+            }
+
+            label.search-label ~ label.search-label {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+// 分页
+.pagination-row {
+    margin-top: 16px;
+
+    .el-pagination {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+// 导航栏相关页
+.portal-non-left-nav {
+    height: 100%;
+    padding: 0 10%;
+
+    .title {
+        font-size: 18px;
+        line-height: 65px;
+        padding-left: 35px;
+    }
+
+    .content {
+        background: white;
+        padding: 30px 35px;
+        height: calc(100% - 75px);
+    }
+
+    .padding-bottom {
+        padding-bottom: 16px;
+    }
+
+    .overflow-y-auto {
+        overflow-y: auto;
+    }
+}
+
+// 滚动条style
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #CCCCCC;
+    -webkit-border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: #999999;
+    -webkit-border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 5px;
+    background-color: #999999;
+    -webkit-border-radius: 8px;
+}
+
+// 更换页面loading效果
+.ucmp-icon-loading {
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    border-width: 20px;
+    border-style: double;
+    border-color: $themeColor #DDD #DDD;
+    border-radius: 50%;
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    -o-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+// 右上角添加按钮
+.breadcrumb-btn {
+    position: absolute;
+    top: 6px;
+    right: 16px;
+    color: $themeColor;
+    background: none;
+    border: none;
+}
+
+/************* 页面公用 end **************/

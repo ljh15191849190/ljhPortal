@@ -1,0 +1,25 @@
+.zoom-in-right-leave-active,
+.zoom-in-right-enter-active {
+    transition: 0.25s;
+}
+
+.zoom-in-right-enter {
+    transform: translate(100%, 0);
+}
+
+.zoom-in-right-leave-to {
+    transform: translate(100%, 0);
+}
+
+.slide-leave-active,
+.slide-enter-active {
+    transition: 0.25s;
+}
+
+.slide-enter {
+    transform: translate(100%, 0);
+}
+
+.slide-leave-to {
+    transform: translate(-100%, 0);
+}

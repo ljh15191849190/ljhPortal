@@ -1,0 +1,197 @@
+.iconfont-portal {
+    font-family: "iconfont-portal" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+%iconfont {
+    font-family: "iconfont-portal" !important;
+    font-style: normal
+}
+
+%loginSize {
+    font-size: 18px;
+}
+
+.portal-icon-user:before {
+    @extend %iconfont;
+    @extend %loginSize;
+    content: "\ec52";
+}
+
+.portal-icon-password:before {
+    @extend %iconfont;
+    @extend %loginSize;
+    content: "\e62d";
+}
+
+.portal-icon-user-manager:before {
+    @extend %iconfont;
+    content: '\e627';
+}
+
+.portal-icon-tenement:before {
+    @extend %iconfont;
+    content: '\e632';
+}
+
+.portal-icon-role:before {
+    @extend %iconfont;
+    content: '\e60e';
+}
+
+.portal-icon-organization:before {
+    @extend %iconfont;
+    content: '\e631';
+}
+
+.portal-icon-organization_tree:before {
+    @extend %iconfont;
+    content: '\e6b6';
+}
+
+.portal-icon-sys-config:before {
+    @extend %iconfont;
+    content: '\e625';
+}
+
+.portal-icon-copyright-config:before {
+    @extend %iconfont;
+    content: '\e610';
+}
+
+.portal-icon-user-defined:before {
+    @extend %iconfont;
+    content: '\e627';
+}
+
+.portal-icon-reset-password:before {
+    @extend %iconfont;
+    content: '\e60a';
+}
+
+.portal-icon-delete:before {
+    @extend %iconfont;
+    content: '\e62a';
+}
+
+.portal-icon-able:before {
+    @extend %iconfont;
+    content: '\e6db';
+}
+
+.portal-icon-disable:before {
+    @extend %iconfont;
+    content: '\e6a7';
+}
+
+.portal-icon-edit:before {
+    @extend %iconfont;
+    content: '\e650';
+}
+
+.portal-icon-add:before {
+    @extend %iconfont;
+    content: '\e623';
+}
+
+.portal-icon-folder:before {
+    @extend %iconfont;
+    content: '\e6a9';
+}
+
+.portal-icon-message:before {
+    @extend %iconfont;
+    content: '\e66c';
+}
+
+.portal-icon-announcement:before {
+    @extend %iconfont;
+    content: '\e9de';
+}
+
+.portal-icon-custom:before {
+    @extend %iconfont;
+    content: '\e688';
+}
+
+.portal-icon-search:before {
+    @extend %iconfont;
+    content: '\e600';
+}
+
+.portal-icon-avatar:before {
+    @extend %iconfont;
+    content: '\e629';
+}
+
+.portal-icon-close:before {
+    @extend %iconfont;
+    content: '\e60d';
+}
+
+.portal-icon-circle:before {
+    @extend %iconfont;
+    content: '\e758';
+}
+
+.portal-icon-selected:before {
+    @extend %iconfont;
+    content: '\e633';
+}
+
+.portal-icon-app:before {
+    @extend %iconfont;
+    content: '\ec53';
+}
+
+.portal-icon-back:before {
+    @extend %iconfont;
+    content: '\e780';
+}
+
+.portal-icon-business:before {
+    @extend %iconfont;
+    content: "\e67e";
+}
+
+.portal-icon-message-center:before {
+    @extend %iconfont;
+    content: "\e665";
+}
+
+.portal-icon-menu:before {
+    @extend %iconfont;
+    content: "\e680";
+}
+
+.portal-icon-see:before {
+    @extend %iconfont;
+    content: "\e621";
+}
+
+.portal-icon-not-see:before {
+    @extend %iconfont;
+    content: "\e671";
+}
+
+.portal-icon-service:before {
+    @extend %iconfont;
+    content: "\e666";
+}
+.portal-icon-ticket:before {
+    @extend %iconfont;
+    content: "\e67a";
+}
+
+.portal-icon-bangzhuzhongxin:before {
+    @extend %iconfont;
+    content: "\e613";
+}
+
+.portal-icon-manual-library:before {
+    @extend %iconfont;
+    content: "\e628";
+}

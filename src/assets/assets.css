@@ -1,0 +1,5 @@
+#c-animate.no-animation {
+    width: 100%;
+    height: 100%;
+    background: url('./images/login-noanimation-bg.jpg') no-repeat;
+}

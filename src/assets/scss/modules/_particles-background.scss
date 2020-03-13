@@ -1,0 +1,61 @@
+#c-animate {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // background-image: url("")  no-repeat center center;
+    background: linear-gradient(-45deg, desaturate($themeColor, 10%), saturate($themeColor, 15%), desaturate($themeColor, 80%));
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=desaturate($themeColor, 10%), endColorStr=saturate($themeColor, 15%));
+    background-size: 400% 400%;
+    animation: animate 15s ease infinite;
+    canvas {
+        display: block;
+        vertical-align: bottom;
+        opacity: 0.4;
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.c-background {
+    &__content {
+        margin: 0 auto;
+        text-align: center;
+        color: #ffffff;
+        -webkit-touch-callout: none; /* iOS Safari */
+        -weAbkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+    }
+    &__title {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.1);
+        height: 75px;
+        font-size: 24px;
+        text-align: left;
+        padding-left: 10%;
+        line-height: 75px;
+        @media screen and (max-width: 1366px) {
+            height: 50px;
+            line-height: 50px;
+            font-size: 20px;
+        }
+        img {
+            max-width: 40px;
+            height: 36px;
+        }
+    }
+}

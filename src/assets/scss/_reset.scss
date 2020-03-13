@@ -1,0 +1,29 @@
+button:focus {
+    outline: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(359deg);
+    }
+}
+
+@-o-keyframes spin {
+    100% {
+        -moz-transform: rotate(359deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(359deg);
+    }
+}

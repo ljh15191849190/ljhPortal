@@ -1,0 +1,62 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width,initial-scale=1.0")
+    meta(name="renderer" content="webkit")
+    title IT管理中枢
+    style.
+      .center-bg{
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          right: 0;
+          transform: translateY(-50%);
+      }
+      .browser-support {
+        display: none;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .center-bg img {
+          display: inline-block;
+      }
+      .version-down{
+          width: 414px;
+          margin: 0 auto;
+          font-size: 14px;
+      }
+      .version-down a {
+          padding-left: 10px;
+          margin-right: 15px;
+      }
+      .version-down span {
+        font-size: 12px;
+        color: #8d9ab2;
+      }
+      .mt-3{
+        margin-top: 15px;
+      }
+  body
+    #portal
+    div.center-bg.browser-support
+        //- script(type="text/javascript" src="/static/js/browserSupport.js")      
+        img(src="/static/img/lowVersion.png")
+        div.text-cot
+          div.mt-3 您当前使用的浏览器版本较低，不能达到最佳的访问效果：
+          div.mt-3 支持IE 10以及以上(包括Edge)、Chrome 42及以上、Firefox 38及以上、Safari等主流浏览器
+          div.mt-3 如果使用360浏览器，建议切换至极速模式访问
+          div.version-down
+              div.left-cot.mt-3 推荐使用
+              div.right-cottext-left
+                  div
+                      a(href="https://sm.myapp.com/original/Browser/69.0.3497.92_chrome_installer.exe", target="_blank")
+                          | 谷歌浏览器 稳定版
+                      span 大小：49.05MB | 版本：69.0.3497.92
+                  div
+                      a(href="https://sm.myapp.com/original/Browser/Firefox-Setup86-62.0.exe", target="_blank")
+                          | Firefox 标准版
+                      span 大小：35.40MB | 版本：62.0.0.6816
+    // built files will be auto injected
